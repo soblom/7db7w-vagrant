@@ -1,11 +1,26 @@
-#Data base user and password for postgres
-db_user="vagrant"
-db_password="Ib-Bit=Cy-wry>shtA7t-Vo-freb"
-
-
 ###
 # POSTGRES
 ###
+
+echo " "
+echo " "
+echo " "
+echo "     ____             __                 _____ ____    __  "
+echo "    / __ \____  _____/ /_____ _________ / ___// __ \  / /  "
+echo "   / /_/ / __ \/ ___/ __/ __ \`/ ___/ _ \\\\ __ \/ / / / / /   "
+echo "  / ____/ /_/ (__  ) /_/ /_/ / /  /  __/__/ / /_/ / / /___ "
+echo " /_/    \____/____/\__/\__, /_/   \___/____/\___\_\/_____/ "
+echo "                      /____/                               "
+echo " "
+echo " "
+echo " "
+
+sleep 2
+
+#Data base user and password for postgres
+db_user="vagrant"
+db_password="vagrant"
+
 echo "Postgres soll installiert sein"
 sudo apt-get -y install postgresql postgresql-contrib
 
