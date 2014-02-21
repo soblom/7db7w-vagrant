@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :chef_solo do |chef|
     config.omnibus.chef_version = :latest
     chef.log_level = :debug
-    chef.add_recipe "7db7w-configure::postgresql"
+    chef.add_recipe "7db7w-configure::riak"
     # You may also specify custom JSON attributes:
     # chef.json = { :mysql_password => "foo" }
   end
