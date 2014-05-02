@@ -36,10 +36,10 @@ if node['7db7w-configure']['riak']['dev_nodes']['number'] > 1
   end
   
   execute "riak-dev#{dev_node}-cluster-plan" do
-    command "/home/#{node['7db7w-config']['user']['name']}/riak/dev#{dev_node}/bin/riak-admin plan"
+    command "/home/#{node['7db7w-config']['user']['name']}/riak/dev#{dev_node}/bin/riak-admin cluster plan"
   end
   
   execute "riak-dev#{dev_node}-cluster-commit" do
-    command "/home/#{node['7db7w-config']['user']['name']}/riak/dev#{dev_node}/bin/riak-admin commit"
+    command "/home/#{node['7db7w-config']['user']['name']}/riak/dev#{dev_node}/bin/riak-admin cluster commit"
   end
 end
